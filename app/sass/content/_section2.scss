@@ -1,0 +1,83 @@
+.s2 {
+  position: relative;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background: url(../img/s2-bg.png) 20% 80% no-repeat;
+  .container {
+    >img {
+      position: absolute;
+      width: 720px;
+      left: -220px;
+    }
+  }
+  &__wrap {
+    position: relative;
+    max-width: 750px;
+    float: right;
+    >h2 {
+      font-family:$GilroyExtrabold;
+      font-size: 42px;
+      text-transform: uppercase;
+      max-width: 500px;
+    }
+    >p {
+      font-family: $PlayfaitBold;
+      font-size: 20px;
+      margin-bottom: 55px;
+    }
+    &--item {
+      display: flex;
+      align-items: center;
+      position: relative;
+      float: left;
+      height: 55px;
+      width: 300px;
+      margin-bottom: 50px;
+      margin-left: 40px;
+      &:nth-of-type(3) {
+        margin-left: 100px;
+      }
+      >span {
+        position: relative;
+        img {
+          display: block;
+          position: relative;
+          float: left;
+          max-height: 100%;
+          width: auto;
+          object-fit: none;
+          z-index: 1;
+        }
+        &:before {
+          content: '';
+          position: absolute;
+          right: -60px;
+          top: 0;
+          width: 70px;
+          height: 55px;
+          z-index: 2;
+          transform: skew(-30deg);
+          background-color: #fff;
+        }
+      }
+      p {
+        font-family: $GilroyExtrabold;
+        font-size: 14px;
+        color: $black;
+        width: 160px;
+        z-index: 2;
+        float: left;
+        line-height: 13px;
+        margin-left: 10px;
+        margin-bottom: 0;
+        background-color: #fff;
+      }
+    }
+    >a {
+      position: relative;
+      float: left;
+      margin-top: 20px;
+    }
+  }
+}

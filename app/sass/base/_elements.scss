@@ -1,0 +1,22 @@
+.red-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 30px;
+  font-family: $GilroyExtrabold;
+  font-size: 17px;
+  color: #fff;
+  max-width: 230px;
+  border: none;
+  border-radius: 25px;
+  background: rgb(253,37,0); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(253,37,0,1) 0%, rgba(191,31,3,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(253,37,0,1) 0%,rgba(191,31,3,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(253,37,0,1) 0%,rgba(191,31,3,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd2500', endColorstr='#bf1f03',GradientType=0 ); /* IE6-9 */
+  &:hover {
+    color: #ffffff;
+  }
+  &:focus {
+    color: #ffffff;
+  }
+}

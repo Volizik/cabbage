@@ -1,5 +1,92 @@
-//@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
-//@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
-//@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
-//@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
-//@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+$PlayfaitBold: 'PlayfairItalic bold';
+$PlayfaitBlack: 'PlayfairItalic black';
+$GilroyLight: 'GilroyLight';
+$GilroyRegular: 'GilroyRegular';
+$GilroyMedium: 'GilroyMedium';
+$GilroyHeavy: 'GilroyHeavy';
+$GilroyBold: 'GilroyBold';
+$GilroyExtrabold: 'GilroyExtrabold';
+
+@font-face {
+  font-family: 'PlayfairItalic bold';
+  src: url('../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.eot') format('embedded-opentype'),
+  url('../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.otf') format('opentype'),
+  url('../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.woff') format('woff'),
+  url('../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
+  url('../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.svg') format('svg');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PlayfairItalic black';
+  src: url('../fonts/PlayfairDisplay/PlayfairDisplay-BlackItalic.eot') format('embedded-opentype'),
+  url('../fonts/PlayfairDisplay/PlayfairDisplay-BlackItalic.otf') format('opentype'),
+  url('../fonts/PlayfairDisplay/PlayfairDisplay-BlackItalic.woff') format('woff'),
+  url('../fonts/PlayfairDisplay/PlayfairDisplay-BlackItalic.ttf') format('truetype'),
+  url('../fonts/PlayfairDisplay/PlayfairDisplay-BlackItalic.svg') format('svg');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GilroyLight';
+  src: url('../fonts/Gilroy/Gilroy-Light.eot') format('embedded-opentype'),
+  url('../fonts/Gilroy/Gilroy-Light.otf') format('opentype'),
+  url('../fonts/Gilroy/Gilroy-Light.woff') format('woff'),
+  url('../fonts/Gilroy/Gilroy-Light.ttf') format('truetype'),
+  url('../fonts/Gilroy/Gilroy-Light.svg') format('svg');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'GilroyRegular';
+  src: url('../fonts/Gilroy/Gilroy-Regular.eot') format('embedded-opentype'),
+  url('../fonts/Gilroy/Gilroy-Regular.otf') format('opentype'),
+  url('../fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
+  url('../fonts/Gilroy/Gilroy-Regular.ttf') format('truetype'),
+  url('../fonts/Gilroy/Gilroy-Regular.svg') format('svg');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'GilroyMedium';
+  src: url('../fonts/Gilroy/Gilroy-Medium.eot') format('embedded-opentype'),
+  url('../fonts/Gilroy/Gilroy-Medium.otf') format('opentype'),
+  url('../fonts/Gilroy/Gilroy-Medium.woff') format('woff'),
+  url('../fonts/Gilroy/Gilroy-Medium.ttf') format('truetype'),
+  url('../fonts/Gilroy/Gilroy-Medium.svg') format('svg');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'GilroyHeavy';
+  src: url('../fonts/Gilroy/Gilroy-Heavy.eot') format('embedded-opentype'),
+  url('../fonts/Gilroy/Gilroy-Heavy.otf') format('opentype'),
+  url('../fonts/Gilroy/Gilroy-Heavy.woff') format('woff'),
+  url('../fonts/Gilroy/Gilroy-Heavy.ttf') format('truetype'),
+  url('../fonts/Gilroy/Gilroy-Heavy.svg') format('svg');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'GilroyBold';
+  src: url('../fonts/Gilroy/Gilroy-Bold.eot') format('embedded-opentype'),
+  url('../fonts/Gilroy/Gilroy-Bold.otf') format('opentype'),
+  url('../fonts/Gilroy/Gilroy-Bold.woff') format('woff'),
+  url('../fonts/Gilroy/Gilroy-Bold.ttf') format('truetype'),
+  url('../fonts/Gilroy/Gilroy-Bold.svg') format('svg');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'GilroyExtrabold';
+  src: url('../fonts/Gilroy/Gilroy-Extrabold.eot') format('embedded-opentype'),
+  url('../fonts/Gilroy/Gilroy-Extrabold.otf') format('opentype'),
+  url('../fonts/Gilroy/Gilroy-Extrabold.woff') format('woff'),
+  url('../fonts/Gilroy/Gilroy-Extrabold.ttf') format('truetype'),
+  url('../fonts/Gilroy/Gilroy-Extrabold.svg') format('svg');
+  font-weight: 800;
+}
