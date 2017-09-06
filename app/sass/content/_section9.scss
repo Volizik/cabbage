@@ -1,0 +1,48 @@
+.s9 {
+  position: relative;
+  width: 100%;
+  margin-top: -80px;
+  &__text {
+    position: relative;
+    h2 {
+      font-family: $GilroyExtrabold;
+      font-size: 45px;
+      color: $black;
+      max-width: 430px;
+      margin-bottom: 35px;
+    }
+    p {
+      font-family: $PlayfaitBold;
+      font-size: 21px;
+      max-width: 535px;
+      margin-bottom: 40px;
+    }
+    ul {
+      padding: 0;
+      max-width: 585px;
+      li {
+        list-style: none;
+        font-family: $GilroyRegular;
+        font-size: 17px;
+        &:before {
+          content: '';
+          position: relative;
+          float: left;
+          height: 5px;
+          width: 5px;
+          top: 10px;
+          border-radius: 50%;
+          background-color: $black;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+  span {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    top: -50px;
+  }
+}

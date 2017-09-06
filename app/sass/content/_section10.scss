@@ -1,0 +1,126 @@
+.s10 {
+  position: relative;
+  margin-top: -250px;
+  background: url(../img/s10-bg.png) center center no-repeat;
+  padding: 390px 0 100px;
+  &__text {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    h2 {
+      margin:0;
+      font-family: $GilroyExtrabold;
+      font-size: 40px;
+      color: $black;
+      max-width: 600px;
+    }
+    p {
+      margin: 0;
+      font-family: $PlayfaitBold;
+      font-size: 21px;
+      max-width: 475px;
+    }
+  }
+  &__wrap {
+    position: relative;
+    margin-bottom: 345px;
+    &--item {
+      position: absolute;
+      height: 210px;
+      &:nth-of-type(1) {
+        top: 250px;
+        width: 260px;
+        &:before {
+          content: '';
+          position: absolute;
+          height: 85px;
+          width: 130px;
+          bottom: -110px;
+          right: 20px;
+          background: url(../img/icons/arrow1.png) center center no-repeat;
+        }
+      }
+      &:nth-of-type(2) {
+        top: 60px;
+        left: 280px;
+        width: 275px;
+        &:before {
+          content: '';
+          position: absolute;
+          height: 135px;
+          width: 70px;
+          top: 130px;
+          left: -40px;
+          background: url(../img/icons/arrow2.png) center center no-repeat;
+        }
+      }
+      &:nth-of-type(3) {
+        left: 610px;
+        top: 60px;
+        width: 370px;
+        &:before {
+          content: '';
+          position: absolute;
+          height: 120px;
+          width: 100px;
+          bottom: -70px;
+          right: 80px;
+          background: url(../img/icons/arrow3.png) center center no-repeat;
+        }
+      }
+      &:nth-of-type(4) {
+        right: 0;
+        top: 270px;
+        width: 260px;
+        &:before {
+          content: '';
+          position: absolute;
+          height: 120px;
+          width: 120px;
+          bottom: -130px;
+          right: 120px;
+          background: url(../img/icons/arrow4.png) center center no-repeat;
+        }
+        p {
+          max-width: 140px;
+        }
+      }
+      img {
+        position: absolute;
+      }
+      a {
+        position: absolute;
+        text-transform: uppercase;
+        font-size: 13px;
+        text-align: center;
+        bottom: 0;
+        left: 0;
+      }
+      p {
+        font-family: $GilroyRegular;
+        font-size: 17px;
+        max-width: 250px;
+        position: absolute;
+        bottom: 50px;
+        right: 0;
+        b {
+          display: block;
+          font-family: $GilroyExtrabold;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  span {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 780px;
+    img {
+      max-width: 100%;
+    }
+  }
+}

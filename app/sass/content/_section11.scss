@@ -1,0 +1,76 @@
+.s11 {
+  position: relative;
+  width: 100%;
+  h2 {
+    font-family: $GilroyExtrabold;
+    font-size: 45px;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  &__slider {
+    position: relative;
+    background: url(../img/s11-bg.png) center center no-repeat;
+  }
+  &__slide {
+    position: relative;
+    padding: 50px 0;
+    width: 100%;
+    &--img {
+      position: relative;
+      float: left;
+      width: 200px;
+      text-align: center;
+      margin-right: 20px;
+      img {
+        max-width: 100%;
+      }
+      p {
+        font-family: Lato, sans-serif;
+        font-weight: 500;
+        color: #ccc;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        b {
+          font-family: $PlayfaitBlack;
+          font-size: 17px;
+          display: block;
+          color: $black;
+          text-transform: capitalize;
+          letter-spacing: normal;
+        }
+      }
+    }
+    &--text {
+      position: relative;
+      width: calc(100% - 200px);
+      p {
+        font-family: $GilroyRegular;
+        font-size: 16px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  .slick-prev {
+    display: none!important;
+  }
+  .slick-next {
+    position: absolute;
+    top: 200px;
+    left: 140px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #e60003;
+    color: transparent;
+    border-radius: 50%;
+    &:before {
+      content: '\2192';
+      display: block;
+      height: 100%;
+      width: 100%;
+      color: #fff;
+      font-size: 22px;
+    }
+  }
+}
