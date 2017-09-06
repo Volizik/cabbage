@@ -1,0 +1,65 @@
+.s7 {
+  position: relative;
+  width: 100%;
+  margin-top: -50px;
+  .container>img {
+    position: absolute;
+  }
+  &--flower {
+    @include breakpoint(min-width 1200px) {
+      display: block;
+      top: 280px;
+      left: 160px;
+      height: 700px;
+    }
+
+  }
+  &--box {
+    @include breakpoint(min-width 1200px) {
+      top: 200px;
+      left: -140px;
+      display: block;
+      height: 1020px;
+    }
+  }
+  &__text {
+    position: relative;
+    max-width: 560px;
+    float: right;
+    h2 {
+      font-family: $GilroyExtrabold;
+      font-size: 45px;
+      color: $black;
+      margin-bottom: 30px;
+    }
+    ul {
+      padding: 0;
+      margin-bottom: 30px;
+      li {
+        position: relative;
+        list-style: none;
+        font-size: 21px;
+        font-family: $GilroyMedium;
+        color: $black;
+        &:before {
+          content: '';
+          position: relative;
+          float: left;
+          top: 15px;
+          height: 5px;
+          width: 5px;
+          border-radius: 50%;
+          background-color: $black;
+          margin-right: 20px;
+        }
+        b {
+          font-family: $GilroyExtrabold;
+          color: $black;
+        }
+      }
+    }
+  }
+  .form {
+    margin: 0 auto;
+  }
+}

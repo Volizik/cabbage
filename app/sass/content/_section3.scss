@@ -1,0 +1,84 @@
+.s3 {
+  position: relative;
+  width: 100%;
+  margin-top: -70px;
+  z-index: 3;
+  background: url(../img/s3-bg.png) center center no-repeat / cover;
+  padding: 100px 0;
+  &__wrap {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    h2 {
+      font-family: $GilroyExtrabold;
+      text-transform: uppercase;
+      color: $black;
+      font-size: 44px;
+      max-width: 560px;
+      margin-bottom: 20px;
+    }
+    p {
+      position: relative;
+      margin-top: 30px;
+      font-size: 17px;
+      font-family: $GilroyRegular;
+      max-width: 480px;
+      color: $black;
+      b {
+        font-family: $GilroyExtrabold;
+      }
+      span {
+        font-size: 17px;
+        font-family: $GilroyRegular;
+        display: block;
+        position: relative;
+        float: left;
+        &:before {
+          content: '';
+          position: relative;
+          float: left;
+          top: 10px;
+          left: 0;
+          height: 5px;
+          width: 5px;
+          background-color: $black;
+          border-radius: 50%;
+          margin-right: 25px;
+        }
+      }
+    }
+    a {
+      position: relative;
+      float: left;
+      clear: both;
+      margin-top: 60px;
+    }
+  }
+  .container > p {
+    position: absolute;
+    top: -20px;
+    right: -30px;
+    span {
+      display: block;
+      font-family: $PlayfaitBold;
+      font-size: 18px;
+      &:last-of-type {
+        margin-left: 20px;
+      }
+    }
+  }
+  &-breast {
+    position: relative;
+    display: block;
+    float: right;
+    right: -100px;
+    top: 30px;
+    width: 850px;
+  }
+  &-leaves {
+    position: absolute;
+    top: 100px;
+    right: -50px;
+  }
+}
