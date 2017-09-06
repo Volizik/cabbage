@@ -29,4 +29,14 @@ $(function () {
         autoplay: true,
         autoplaySpeed: 7000
     });
+
+    $('.s12--slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 7000
+    });
 });

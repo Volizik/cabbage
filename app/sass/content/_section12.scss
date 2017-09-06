@@ -1,0 +1,92 @@
+.s12 {
+  position: relative;
+  width: 100%;
+  background: url(../img/s12-bg.png) no-repeat center center;
+  padding: 120px 0 100px;
+  margin-top: -40px;
+  img {
+    position: absolute;
+    z-index: 1;
+  }
+  &__wrap {
+    position: relative;
+    max-width: 780px;
+    z-index: 2;
+    h2 {
+      font-family: $GilroyExtrabold;
+      font-size: 45px;
+      max-width: 485px;
+      margin-top: 0;
+    }
+    a {
+      float: right;
+      margin-top: 30px;
+    }
+  }
+  &--slide {
+    position: relative;
+    p {
+      font-family:$GilroyExtrabold;
+      font-size: 15px;
+      padding-left: 20px;
+      margin-left: 20px;
+      border-left: 1px solid #e60003;
+    }
+  }
+  &__text {
+    margin-top: 20px;
+    p {
+      font-family: $GilroyRegular;
+      font-size: 14px;
+      margin: 0;
+      &:first-letter {
+        margin-left: 30px;
+      }
+    }
+  }
+  &--cream {
+    top: 400px;
+    right: -300px;
+  }
+  &--flower {
+    top: 250px;
+    right: 145px;
+  }
+
+
+
+  .slick-prev {
+    right: 40px;
+    top: -20px;
+    &:before {
+      content: "\2190";
+      display: block;
+      height: 100%;
+      width: 100%;
+      color: #fff;
+      font-size: 22px;
+    }
+  }
+  .slick-next {
+    right: 0;
+    top: -20px;
+    &:before {
+      content: "\2192";
+      display: block;
+      height: 100%;
+      width: 100%;
+      color: #fff;
+      font-size: 22px;
+    }
+  }
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #e60003;
+    color: transparent;
+    border-radius: 50%;
+  }
+}

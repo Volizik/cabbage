@@ -7,7 +7,9 @@
     left: -50px;
     width: 600px;
     img {
+      position: relative;
       max-width: 100%;
+      z-index: 3;
     }
   }
   &__text {
