@@ -4,13 +4,6 @@
   padding-top: 30px;
   padding-bottom: 50px;
   background: url(../img/s2-bg.png) 20% 80% no-repeat;
-  .container {
-    >img {
-      position: absolute;
-      width: 720px;
-      left: -220px;
-    }
-  }
   &__wrap {
     position: relative;
     max-width: 750px;
@@ -79,5 +72,14 @@
       float: left;
       margin-top: 20px;
     }
+  }
+  &--cream {
+    position: absolute;
+    left: -20px;
+  }
+  &--shadow {
+    position: absolute;
+    left: -220px;
+    bottom: -60px;
   }
 }
