@@ -1,0 +1,97 @@
+.s4 {
+  position: relative;
+  width: 100%;
+  margin-bottom: 70px;
+  &__head {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    h2 {
+      position: relative;
+      font-family: $GilroyExtrabold;
+      font-size: 45px;
+      color: $black;
+      max-width: 410px;
+    }
+    p {
+      position: relative;
+      max-width: 540px;
+      font-family:$PlayfaitBold;
+      font-size: 21px;
+    }
+  }
+  &__body {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    &--item {
+      position: relative;
+      max-width: 350px;
+      margin-bottom: 10px;
+      &:nth-of-type(3n+1) {
+        &:before {
+          content: '';
+          width: 2px;
+          height: 70px;
+          background-color: red;
+          position: absolute;
+          display: block;
+          right: -20px;
+          top: -30px;
+        }
+      }
+      &:nth-of-type(3n+2) {
+        margin-top: 80px;
+      }
+      &:nth-of-type(3n+3) {
+        margin-top: 140px;
+        &:before {
+          content: '';
+          width: 2px;
+          height: 70px;
+          background-color: red;
+          position: absolute;
+          display: block;
+          left: -20px;
+          bottom: -50px;
+        }
+      }
+      img {
+        height: 130px;
+        width: 130px;
+        position: relative;
+        float: left;
+      }
+      h3 {
+        font-family: $GilroyExtrabold;
+        font-size: 15px;
+        max-width: 130px;
+        position: relative;
+        float: left;
+        text-transform: uppercase;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        margin-top: 0;
+      }
+      p {
+        margin: 0;
+        font-family: $GilroyRegular;
+        font-size: 13px;
+        position: relative;
+        width: calc(100% - 140px);
+        float: right;
+      }
+      .number {
+        width: 60px;
+        object-fit: none;
+        position: absolute;
+        top: -80px;
+        left: 40%;
+      }
+    }
+  }
+}
