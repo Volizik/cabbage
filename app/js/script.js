@@ -27,7 +27,7 @@ $(function () {
         slidesToShow: 1,
         adaptiveHeight: true,
         autoplay: true,
-        autoplaySpeed: 7000
+        autoplaySpeed: 5000
     });
 
     $('.s12--slider').slick({
@@ -37,6 +37,6 @@ $(function () {
         slidesToShow: 1,
         adaptiveHeight: true,
         autoplay: true,
-        autoplaySpeed: 7000
+        autoplaySpeed: 5000
     });
 });
