@@ -111,6 +111,9 @@
       width: 100%;
       color: #fff;
       font-size: 22px;
+      @include breakpoint(max-width 992px) {
+        margin-top: -3px;
+      }
     }
     @include breakpoint(max-width 770px) {
       left: 60%;

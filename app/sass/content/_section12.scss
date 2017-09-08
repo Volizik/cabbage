@@ -90,6 +90,9 @@
       width: 100%;
       color: #fff;
       font-size: 22px;
+      @include breakpoint(max-width 992px) {
+        margin-top: -3px;
+      }
     }
   }
   .slick-next {
@@ -102,6 +105,9 @@
       width: 100%;
       color: #fff;
       font-size: 22px;
+      @include breakpoint(max-width 992px) {
+        margin-top: -5px;
+      }
     }
   }
   .slick-prev,
