@@ -3,6 +3,19 @@
   margin-top: -200px;
   background: url(../img/s10-bg.png) center center no-repeat;
   padding: 390px 0 60px;
+  @include breakpoint(max-width 1200px) {
+    padding: 130px 0 60px;
+    margin-top: -80px;
+    background-size: cover;
+  }
+  @include breakpoint(max-width 992px) {
+    margin-top: -40px;
+  }
+  @include breakpoint(max-width 600px) {
+    padding: 0;
+    margin-top: 30px;
+    background-size: auto;
+  }
   &__text {
     position: relative;
     width: 100%;
@@ -10,26 +23,64 @@
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    @include breakpoint(max-width 992px) {
+      flex-direction: column;
+      text-align: center;
+    }
+    @include breakpoint(max-width 600px) {
+      margin-top: 50px;
+    }
     h2 {
       margin:0;
       font-family: $GilroyExtrabold;
       font-size: 40px;
       color: $black;
       max-width: 600px;
+      @include breakpoint(max-width 992px) {
+        margin-bottom: 40px;
+      }
+      @include breakpoint(max-width 600px) {
+        font-size: 32px;
+      }
     }
     p {
       margin: 0;
       font-family: $PlayfaitBold;
       font-size: 21px;
       max-width: 475px;
+      @include breakpoint(max-width 600px) {
+        font-size: 16px;
+      }
     }
   }
   &__wrap {
     position: relative;
     margin-bottom: 345px;
+    @include breakpoint(max-width 600px) {
+      margin-bottom: 100px;
+    }
     &--item {
       position: absolute;
       height: 210px;
+      @include breakpoint(max-width 1200px) {
+        height: 150px;
+      }
+      @include breakpoint(max-width 992px) {
+        position: relative;
+        float: left;
+        width: 40% !important;
+        top: 0!important;
+        left: 0!important;
+        margin: 40px 0 40px 40px;
+        &:before {
+          display: none;
+        }
+      }
+      @include breakpoint(max-width 600px) {
+        width: 300px !important;
+        margin: 30px auto;
+        float: none;
+      }
       &:nth-of-type(1) {
         top: 250px;
         width: 260px;
@@ -47,6 +98,9 @@
         top: 60px;
         left: 280px;
         width: 275px;
+        @include breakpoint(max-width 1200px) {
+          left: 250px;
+        }
         &:before {
           content: '';
           position: absolute;
@@ -55,6 +109,12 @@
           top: 130px;
           left: -40px;
           background: url(../img/icons/arrow2.png) center center no-repeat;
+          @include breakpoint(max-width 1200px) {
+            height: 100px;
+            background-size: contain;
+            left: 20px;
+            top: 160px;
+          }
         }
       }
       &:nth-of-type(3) {
@@ -69,6 +129,12 @@
           bottom: -70px;
           right: 80px;
           background: url(../img/icons/arrow3.png) center center no-repeat;
+          @include breakpoint(max-width 1200px) {
+            height: 100px;
+            background-size: contain;
+            left: 20px;
+            top: 160px;
+          }
         }
       }
       &:nth-of-type(4) {
@@ -90,6 +156,9 @@
       }
       img {
         position: absolute;
+        @include breakpoint(max-width 1200px) {
+          height: 140px;
+        }
       }
       a {
         position: absolute;
@@ -98,6 +167,10 @@
         text-align: center;
         bottom: 0;
         left: 0;
+        @include breakpoint(max-width 1200px) {
+          font-size: 11px;
+          padding: 10px 20px;
+        }
       }
       p {
         font-family: $GilroyRegular;
@@ -106,6 +179,10 @@
         position: absolute;
         bottom: 50px;
         right: 0;
+        @include breakpoint(max-width 992px) {
+          left: 110px;
+
+        }
         b {
           display: block;
           font-family: $GilroyExtrabold;
@@ -119,6 +196,12 @@
     position: relative;
     margin: 0 auto;
     max-width: 780px;
+    @include breakpoint(max-width 1200px) {
+      max-width: 500px;
+    }
+    @include breakpoint(max-width 992px) {
+      display: none;
+    }
     img {
       max-width: 100%;
     }

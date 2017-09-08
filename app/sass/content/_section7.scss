@@ -2,36 +2,53 @@
   position: relative;
   width: 100%;
   margin-top: -50px;
+  @include breakpoint(max-width 600px) {
+    margin-top: 0;
+  }
   .container>img {
     position: absolute;
   }
   &--flower {
-    @include breakpoint(min-width 1200px) {
-      display: block;
-      top: 130px;
-      left: 110px;
-      height: 700px;
+    display: block;
+    top: 40px;
+    left: 150px;
+    height: 700px;
+    @include breakpoint(max-width 1200px) {
+      display: none;
     }
-
   }
   &--box {
-    @include breakpoint(min-width 1200px) {
-      position: absolute;
-      top: -100px;
-      left: -210px;
-      display: block;
-      height: 1020px;
+    position: absolute;
+    top: -70px;
+    left: -280px;
+    display: block;
+    height: 1020px;
+    z-index: 2;
+    @include breakpoint(max-width 1200px) {
+      height: 700px;
+      top: 110px;
+      left: -80px;
+    }
+    @include breakpoint(max-width 992px) {
+      display: none;
     }
   }
   &__text {
     position: relative;
     max-width: 560px;
     float: right;
+    @include breakpoint(max-width 992px) {
+      float: none;
+      margin: 0 auto;
+    }
     h2 {
       font-family: $GilroyExtrabold;
       font-size: 45px;
       color: $black;
       margin-bottom: 30px;
+      @include breakpoint(max-width 600px) {
+        font-size: 32px;
+      }
     }
     ul {
       padding: 0;
@@ -42,6 +59,9 @@
         font-size: 21px;
         font-family: $GilroyMedium;
         color: $black;
+        @include breakpoint(max-width 600px) {
+          font-size: 16px;
+        }
         &:before {
           content: '';
           position: relative;

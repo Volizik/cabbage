@@ -3,15 +3,28 @@
   width: 100%;
   background: url(../img/s8-bg.png) no-repeat center center;
   padding: 160px 0 80px;
+  @include breakpoint(max-width 1200px) {
+    margin-top: -100px;
+  }
   &__text {
     display: flex;
     justify-content: space-between;
+    @include breakpoint(max-width 1200px) {
+      flex-direction: column;
+      text-align: center;
+    }
     h2 {
       font-family: $GilroyExtrabold;
       text-transform: uppercase;
       font-size: 45px;
       color: $black;
       max-width: 435px;
+      @include breakpoint(max-width 1200px) {
+        margin: 0 auto;
+      }
+      @include breakpoint(max-width 600px) {
+        font-size: 32px;
+      }
     }
     p {
       font-family: $PlayfaitBold;
@@ -19,6 +32,12 @@
       max-width: 575px;
       line-height: 24px;
       margin-top: 15px;
+      @include breakpoint(max-width 1200px) {
+        margin: 15px auto 30px;
+      }
+      @include breakpoint(max-width 600px) {
+        font-size: 16px;
+      }
       b {
         display: block;
         font-family:$PlayfaitBlack;
@@ -31,18 +50,39 @@
     justify-content: space-around;
     flex-flow: row wrap;
     margin-bottom: 50px;
+    @include breakpoint(max-width 1200px) {
+      justify-content: space-between;
+    }
     &--item {
       position: relative;
       margin-top: 40px;
+      @include breakpoint(max-width 600px) {
+        margin-left: 30px;
+        margin-top: 10px!important;
+      }
       &:nth-of-type(1) {
         max-width: 515px;
+        @include breakpoint(max-width 1200px) {
+          max-width: 480px;
+        }
       }
       &:nth-of-type(2) {
         max-width: 530px;
+        @include breakpoint(max-width 1200px) {
+          max-width: 480px;
+        }
       }
       &:nth-of-type(3) {
         max-width: 700px;
-
+        @include breakpoint(max-width 1200px) {
+          margin-top: -30px;
+        }
+        @include breakpoint(max-width 992px) {
+          margin-top: 40px;
+        }
+      }
+      @include breakpoint(max-width 992px) {
+        max-width: 100%!important;
       }
       img {
         display: block;
@@ -52,6 +92,9 @@
         float: left;
         object-fit: none;
         margin-right: 10px;
+        @include breakpoint(max-width 600px) {
+          display: none;
+        }
       }
       p {
         position: relative;
@@ -60,16 +103,26 @@
         font-family: 'Open Sans', sans-serif;
         font-weight: 800;
         width:calc(100% - 170px);
+        @include breakpoint(max-width 600px) {
+          width: 100%;
+          margin-bottom: 0;
+        }
       }
       ul {
         position: relative;
         padding: 0;
         float: left;
         width:calc(100% - 170px);
+        @include breakpoint(max-width 600px) {
+          width: 100%;
+        }
         li {
           position: relative;
           list-style:none;
           font-family: 'Open Sans', sans-serif;
+          @include breakpoint(max-width 600px) {
+            font-size: 13px;
+          }
           &:before {
             content: '';
             position: relative;
@@ -85,4 +138,5 @@
       }
     }
   }
+
 }

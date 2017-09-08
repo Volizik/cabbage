@@ -6,6 +6,13 @@
     display: block;
     left: -50px;
     width: 600px;
+    @include breakpoint(max-width 1200px) {
+      width: 400px;
+      margin-top: 100px;
+    }
+    @include breakpoint(max-width 992px) {
+      display: none;
+    }
     img {
       position: relative;
       max-width: 100%;
@@ -16,15 +23,25 @@
     position: relative;
     float: right;
     max-width: 590px;
+    @include breakpoint(max-width 992px) {
+      margin: 0 auto;
+      float: none;
+    }
     h2 {
       font-family: $GilroyExtrabold;
       font-size: 45px;
       text-transform: uppercase;
+      @include breakpoint(max-width 600px) {
+        font-size: 32px;
+      }
     }
     p {
       font-family: $GilroyRegular;
       font-size: 15px;
       margin-top: 20px;
+      @include breakpoint(max-width 600px) {
+        font-size: 13px;
+      }
       &:last-of-type {
         margin-top: 45px;
       }
@@ -33,6 +50,10 @@
         display: block;
         font-family: $PlayfaitBold;
         font-size: 21px;
+        z-index: 3;
+        @include breakpoint(max-width 600px) {
+          font-size: 16px;
+        }
       }
     }
   }

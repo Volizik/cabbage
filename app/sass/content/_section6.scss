@@ -4,15 +4,29 @@
   background: url(../img/s6-bg.png) no-repeat center center;
   padding: 145px 0;
   margin-top: -110px;
+  @include breakpoint(max-width 992px) {
+    background: url(../img/s6-bg2.png) no-repeat center center;
+  }
+  @include breakpoint(max-width 600px) {
+    background-size: cover;
+    padding: 40px 0 80px;
+    margin-top: 0px;
+  }
   &__wrap {
     position: relative;
     overflow: hidden;
     top: 30px;
+    @include breakpoint(max-width 992px) {
+      text-align: center;
+    }
     >p {
       font-family: $GilroyBold;
       font-size: 18px;
       text-transform: uppercase;
       margin-bottom: 40px;
+      @include breakpoint(max-width 600px) {
+        font-size: 13px;
+      }
     }
   }
   &__text {
@@ -23,6 +37,10 @@
       text-transform: uppercase;
       color: $black;
       margin-bottom: 50px;
+      @include breakpoint(max-width 600px) {
+        font-size: 32px;
+        margin-bottom: 30px;
+      }
     }
     >p {
       font-family: $GilroyRegular;
@@ -30,12 +48,24 @@
       color: $black;
       max-width: 590px;
       margin-bottom: 50px;
+      @include breakpoint(max-width 992px) {
+        margin: 0 auto 50px;
+      }
+      @include breakpoint(max-width 600px) {
+        font-size: 13px;
+        margin-bottom: 30px;
+      }
     }
   }
   &__row {
     position: relative;
     float: left;
     width: 100%;
+    @include breakpoint(max-width 992px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
     &--item {
       position: relative;
       float: left;
@@ -44,15 +74,32 @@
       margin-right: 80px;
       margin-bottom: 20px;
       z-index: 2;
+      @include breakpoint(max-width 1200px) {
+        margin-right: 40px;
+      }
+      @include breakpoint(max-width 992px) {
+        margin-right: 0;
+      }
+      @include breakpoint(max-width 600px) {
+        width: 150px;
+      }
       img {
         width: 100%;
         height: 70px;
         object-fit: none;
         margin-bottom: 15px;
+        @include breakpoint(max-width 600px) {
+          margin-bottom: 0;
+          height: 40px;
+          object-fit: contain;
+        }
       }
       p {
         font-size: 15px;
         font-family: $GilroyRegular;
+        @include breakpoint(max-width 600px) {
+          font-size: 12px;
+        }
         b {
           font-family: $GilroyBold;
         }

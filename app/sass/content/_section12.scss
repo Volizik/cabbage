@@ -4,6 +4,9 @@
   background: url(../img/s12-bg.png) no-repeat center center;
   padding: 120px 0 100px;
   margin-top: -40px;
+  @include breakpoint(max-width 600px) {
+    background-size: cover;
+  }
   img {
     position: absolute;
     z-index: 1;
@@ -17,6 +20,11 @@
       font-size: 45px;
       max-width: 485px;
       margin-top: 0;
+      @include breakpoint(max-width 600px) {
+        font-size: 32px;
+        width: 100%;
+        text-align: center;
+      }
     }
     a {
       float: right;
@@ -31,6 +39,9 @@
       padding-left: 20px;
       margin-left: 20px;
       border-left: 1px solid #e60003;
+      @include breakpoint(max-width 600px) {
+        font-size: 12px;
+      }
     }
   }
   &__text {
@@ -39,6 +50,9 @@
       font-family: $GilroyRegular;
       font-size: 14px;
       margin: 0;
+      @include breakpoint(max-width 600px) {
+        font-size: 12px;
+      }
       &:first-letter {
         margin-left: 30px;
       }
@@ -47,10 +61,21 @@
   &--cream {
     top: 0px;
     right: -300px;
+    @include breakpoint(max-width 1200px) {
+      width: 500px;
+      right: -200px;
+      top: 100px;
+    }
+    @include breakpoint(max-width 992px) {
+      display: none;
+    }
   }
   &--flower {
     top: 0px;
     right: 145px;
+    @include breakpoint(max-width 1200px) {
+      display: none;
+    }
   }
 
 
