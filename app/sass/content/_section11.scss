@@ -75,6 +75,21 @@
       }
     }
   }
+  &-img {
+    display: none;
+    position: relative;
+    margin: 50px auto 0;
+    max-width: 500px;
+    @include breakpoint(max-width 992px) {
+      display: block;
+    }
+    img {
+      display: block;
+      position: relative;
+      max-width: 100%;
+    }
+  }
+
 
   .slick-prev {
     display: none!important;

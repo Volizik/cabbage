@@ -6,11 +6,12 @@
   margin-top: -110px;
   @include breakpoint(max-width 992px) {
     background: url(../img/s6-bg2.png) no-repeat center center;
+    margin-top: 20px;
   }
   @include breakpoint(max-width 600px) {
     background-size: cover;
     padding: 40px 0 80px;
-    margin-top: 0px;
+    margin-top: 40px;
   }
   &__wrap {
     position: relative;

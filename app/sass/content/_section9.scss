@@ -2,6 +2,9 @@
   position: relative;
   width: 100%;
   margin-top: -80px;
+  @include  breakpoint(max-width 750px) {
+    margin-top: 0;
+  }
   &__text {
     position: relative;
     @include  breakpoint(max-width 750px) {

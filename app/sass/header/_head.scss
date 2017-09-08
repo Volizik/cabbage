@@ -5,6 +5,9 @@
   padding-top: 135px;
   padding-bottom: 70px;
   box-sizing: border-box;
+  @include breakpoint(max-width 992px) {
+    background: url(../img/header-bg2.png) center center no-repeat / cover;
+  }
   h1 {
     font-family: $PlayfaitBold;
     font-size: 44px;
